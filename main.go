@@ -49,6 +49,7 @@ func main() {
 	vehichles = append(vehichles, Vehichle{ID: "2", Model: "E320", Vintage: "1997", Make: &Make{Name: "Mercedes-Benz"}})
 	vehichles = append(vehichles, Vehichle{ID: "3", Model: "XM", Vintage: "1997", Make: &Make{Name: "Citroën"}})
 	vehichles = append(vehichles, Vehichle{ID: "4", Model: "924", Vintage: "1980", Make: &Make{Name: "Porsche"}})
+	vehichles = append(vehichles, Vehichle{ID: "5", Model: "E200", Vintage: "1987", Make: &Make{Name: "Mercedes-Benz"}})
 
 	r.HandleFunc("/api/vehichles", getVehichles).Methods("GET")
 	r.HandleFunc("/api/vehichles/{id}", getVehichle).Methods("GET")
